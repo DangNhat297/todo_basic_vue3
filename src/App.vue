@@ -1,26 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <home-screen />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import HomeScreen from './components/HomeScreen.vue';
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    HomeScreen
+  },
+  data() {
+    return {
+      form: {
+        title: 'test title',
+        description: 'test description',
+        due: '2022-20-20',
+        status: 1
+      }
+    }
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

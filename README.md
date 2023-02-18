@@ -1,5 +1,12 @@
 # todo_app
 
+# run database
+
+```
+cd db
+json-server --watch db.json
+```
+
 ## Project setup
 ```
 yarn install
